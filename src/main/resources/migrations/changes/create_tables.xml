@@ -4,10 +4,10 @@
 	<changeSet id="20240419" author="Gaurav Pandarkar">
 
 		<createTable tableName="users" schemaName="authentication_service">
-			<column name="userCode" type="int">
+			<column name="user_code" type="int">
 				<constraints primaryKey="true" />
 			</column>
-			<column name="userId" type="int">
+			<column name="user_id" type="int">
 				<constraints nullable="false" />
 			</column>
 			<column name="username" type="varchar(255)">

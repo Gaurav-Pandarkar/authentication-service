@@ -12,10 +12,10 @@ public class Users {
 
   @GeneratedValue // Auto generated (DB => sequence), primary key
   @Id
-  @Column(name = "userCode", nullable = false, updatable = false, insertable = false)
+  @Column(name = "user_code", nullable = false, updatable = false, insertable = false)
   private long userCode;
 
-  @Column(name = "userId", nullable = false, updatable = false)
+  @Column(name = "user_id", nullable = false, updatable = false)
   private long userId;
 
   @Column(name = "username", nullable = false, length = 50)
@@ -69,7 +69,9 @@ public class Users {
 
   @Override
   public String toString() {
-    return "Users [userId="
+    return "Users [user_code="
+        + userCode
+        + ",userId="
         + userId
         + ", username="
         + username
